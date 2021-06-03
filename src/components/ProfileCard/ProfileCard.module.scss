@@ -1,0 +1,32 @@
+.card {
+	background-color: #fffffe;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	img.card-img-top {
+		transition: 0.5s ease-in-out;
+	}
+	img.card-img-top:hover {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		transform: scale(1.2);
+	}
+	.social-link-set {
+		font-size: 28px;
+		border: 0;
+		background-color: inherit;
+		a {
+			filter: grayscale(100%);
+			transition: 0.3s ease-in-out;
+			color: inherit;
+			margin: 0 !important;
+			&:hover {
+				filter: grayscale(0%);
+			}
+		}
+	}
+	.btn-info {
+		background-color: #232946;
+		border-color: #232946;
+		color: #c7cef1;
+	}
+}
