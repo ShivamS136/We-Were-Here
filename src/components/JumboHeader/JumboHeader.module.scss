@@ -11,3 +11,21 @@
 		bottom: 0;
 	}
 }
+
+.customShapeDividerTop {
+	position: relative;
+	background-color: #d4d8f0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 70px;
+
+		path {
+			fill: #232946;
+		}
+	}
+}

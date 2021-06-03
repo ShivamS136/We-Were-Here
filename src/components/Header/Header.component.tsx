@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
+import SpanIcon from "../SpanIcon/SpanIcon.component";
 
 const Header = ({ teamBrand }: { teamBrand: string }) => {
 	return (
@@ -16,7 +17,7 @@ const Header = ({ teamBrand }: { teamBrand: string }) => {
 				<div className="mr-sm-2">
 					<a href="https://github.com/ShivamS136/Team-Profile" target="_blank">
 						<Button variant="outline-light" className="my-2 my-sm-0" type="submit">
-							<span className="icon-icomoon-github"></span> Github
+							<SpanIcon name="github"></SpanIcon> Github
 						</Button>
 					</a>
 				</div>
