@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import sitedata from "../../sitedata";
 
 import Header from "../Header/Header.component";
+import JumboHeader from "../JumboHeader/JumboHeader.component";
 
 class RootComponent extends Component {
 	constructor(props: any) {
@@ -9,7 +10,12 @@ class RootComponent extends Component {
 		// this.state = sitedata;
 	}
 	render() {
-		return <Header teamBrand={sitedata.master.teamBrand}></Header>;
+		return (
+			<>
+				<Header teamBrand={sitedata.master.teamBrand} />
+				<JumboHeader teamName={sitedata.master.teamName} />
+			</>
+		);
 	}
 }
 
