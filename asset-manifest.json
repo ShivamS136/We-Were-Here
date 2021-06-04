@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/We-Were-Here/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/We-Were-Here/static/js/main.9687f4b0.chunk.js",
-    "main.js.map": "/We-Were-Here/static/js/main.9687f4b0.chunk.js.map",
-    "runtime-main.js": "/We-Were-Here/static/js/runtime-main.4d030588.js",
-    "runtime-main.js.map": "/We-Were-Here/static/js/runtime-main.4d030588.js.map",
-    "static/js/2.8f8454ab.chunk.js": "/We-Were-Here/static/js/2.8f8454ab.chunk.js",
-    "static/js/2.8f8454ab.chunk.js.map": "/We-Were-Here/static/js/2.8f8454ab.chunk.js.map",
-    "static/js/3.b134fe3d.chunk.js": "/We-Were-Here/static/js/3.b134fe3d.chunk.js",
-    "static/js/3.b134fe3d.chunk.js.map": "/We-Were-Here/static/js/3.b134fe3d.chunk.js.map",
+    "main.css": "/We-Were-Here/static/css/main.db8c3c77.chunk.css",
+    "main.js": "/We-Were-Here/static/js/main.48e1fe7c.chunk.js",
+    "main.js.map": "/We-Were-Here/static/js/main.48e1fe7c.chunk.js.map",
+    "runtime-main.js": "/We-Were-Here/static/js/runtime-main.e75bcca1.js",
+    "runtime-main.js.map": "/We-Were-Here/static/js/runtime-main.e75bcca1.js.map",
+    "static/js/2.6db9f470.chunk.js": "/We-Were-Here/static/js/2.6db9f470.chunk.js",
+    "static/js/2.6db9f470.chunk.js.map": "/We-Were-Here/static/js/2.6db9f470.chunk.js.map",
     "index.html": "/We-Were-Here/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/We-Were-Here/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.8f8454ab.chunk.js.LICENSE.txt": "/We-Were-Here/static/js/2.8f8454ab.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/We-Were-Here/static/media/logo.6ce24c58.svg"
+    "static/css/main.db8c3c77.chunk.css.map": "/We-Were-Here/static/css/main.db8c3c77.chunk.css.map",
+    "static/js/2.6db9f470.chunk.js.LICENSE.txt": "/We-Were-Here/static/js/2.6db9f470.chunk.js.LICENSE.txt",
+    "static/media/bottom-wave.382235b7.svg": "/We-Were-Here/static/media/bottom-wave.382235b7.svg",
+    "static/media/hero-illustration.ccd91ae0.svg": "/We-Were-Here/static/media/hero-illustration.ccd91ae0.svg",
+    "static/media/icon.css": "/We-Were-Here/static/media/icomoon.c376b519.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d030588.js",
-    "static/js/2.8f8454ab.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.9687f4b0.chunk.js"
+    "static/js/runtime-main.e75bcca1.js",
+    "static/js/2.6db9f470.chunk.js",
+    "static/css/main.db8c3c77.chunk.css",
+    "static/js/main.48e1fe7c.chunk.js"
   ]
 }
