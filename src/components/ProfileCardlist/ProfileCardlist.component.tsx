@@ -3,26 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "./ProfileCardlist.module.css";
 import ProfileCard from "../ProfileCard/ProfileCard.component";
 
-interface member {
-	name: string;
-	subtitle: string;
-	img?: string;
-	secImg?: string;
-	socialLinks?: {
-		linkedin?: string;
-		facebook?: string;
-		github?: string;
-		stackoverflow?: string;
-	};
-}
 type TypeMemberList = {
-	memberList: member[];
+	memberList: TypeMember[];
 };
 
-const ProfileCardMapComponent = ({ memberList }: { memberList: member[] }) => {
-	const ProfileCardMap = memberList.map((member: member, index) => {
+const ProfileCardMapComponent = ({ memberList }: { memberList: TypeMember[] }) => {
+	const ProfileCardMap = memberList.map((member: TypeMember, index) => {
 		return (
-			<Col>
+			<Col className="p-3">
 				<ProfileCard member={member} key={index} />
 			</Col>
 		);
@@ -39,9 +27,11 @@ class ProfileCardlist extends Component<TypeMemberList, TypeMemberList> {
 	render() {
 		return (
 			<Container fluid className={styles.contentBox + " py-5"}>
-				<Row xs={1} sm={2} md={3} noGutters>
-					<ProfileCardMapComponent memberArr={this.state.memberList} />
-				</Row>
+				<Container>
+					<Row xs={1} sm={2} md={3} noGutters>
+						<ProfileCardMapComponent memberList={this.state.memberList} />
+					</Row>
+				</Container>
 			</Container>
 		);
 	}

@@ -1,25 +1,12 @@
-interface member {
-	name: string;
-	subtitle: string;
-	img?: string;
-	secImg?: string;
-	socialLinks?: {
-		linkedin?: string;
-		facebook?: string;
-		github?: string;
-		stackoverflow?: string;
-	};
-}
-
-interface sitedataInterface {
+interface TypeSitedata {
 	master: {
 		teamBrand: string;
 		teamName: string;
 	};
-	members: member[];
+	members: TypeMember[];
 }
 
-const sitedata: sitedataInterface = {
+const sitedata: TypeSitedata = {
 	master: {
 		teamBrand: "LEAP Developers",
 		teamName: "LEAP",

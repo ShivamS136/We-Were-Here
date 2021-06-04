@@ -15,7 +15,7 @@ const Header = ({ teamBrand }: { teamBrand: string }) => {
 					<Nav.Link href="#aboutPage">About This Page</Nav.Link>
 				</Nav>
 				<div className="mr-sm-2">
-					<a href="https://github.com/ShivamS136/Team-Profile" target="_blank">
+					<a href="https://github.com/ShivamS136/Team-Profile" rel="noreferrer" target="_blank">
 						<Button variant="outline-light" className="my-2 my-sm-0" type="submit">
 							<SpanIcon name="github"></SpanIcon> Github
 						</Button>

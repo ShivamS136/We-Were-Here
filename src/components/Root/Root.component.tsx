@@ -6,9 +6,9 @@ import JumboHeader from "../JumboHeader/JumboHeader.component";
 import ProfileCardList from "../ProfileCardlist/ProfileCardlist.component";
 
 class RootComponent extends Component {
-	constructor(props: any) {
-		super(props);
-	}
+	// constructor(props: any) {
+	// 	super(props);
+	// }
 	render() {
 		return (
 			<>

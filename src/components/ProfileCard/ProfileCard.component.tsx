@@ -3,25 +3,9 @@ import { Card, Button, Row } from "react-bootstrap";
 import styles from "./ProfileCard.module.scss";
 import SpanIcon from "../SpanIcon/SpanIcon.component";
 
-type socialLinks = {
-	[index: string]: string;
-	linkedin: string;
-	facebook: string;
-	github: string;
-	stackoverflow: string;
-};
-interface member {
-	name: string;
-	subtitle: string;
-	img?: string;
-	secImg?: string;
-	socialLinks?: socialLinks;
-	placeholderImg?: string;
-	imgError?: boolean;
-}
-
-const SocialLinkSetComponent = ({ socialLinks }: { socialLinks: socialLinks }) => {
-	const socialLinkSet = Object.keys(socialLinks).map((platform, index) => {
+const SocialLinkSetComponent = ({ socialLinks }: { socialLinks: TypeSocialLinks }) => {
+	const objKeys = Object.keys(socialLinks) as (keyof TypeSocialLinks)[];
+	const socialLinkSet = objKeys.map((platform, index) => {
 		return (
 			<Card.Link href={socialLinks[platform]} target="_blank" className="col" key={index}>
 				<SpanIcon name={platform}></SpanIcon>
@@ -31,10 +15,19 @@ const SocialLinkSetComponent = ({ socialLinks }: { socialLinks: socialLinks }) =
 	return <>{socialLinkSet}</>;
 };
 
-class ProfileCard extends Component<member, member> {
-	constructor(props: member) {
+interface TypeProp {
+	member: TypeMember;
+}
+
+interface TypeState extends TypeMember {
+	placeholderImg: string;
+	imgError: boolean;
+}
+
+class ProfileCard extends Component<TypeProp, TypeState> {
+	constructor(props: TypeProp) {
 		super(props);
-		this.state = { ...this.props, ...{ placeholderImg: `https://robohash.org/${encodeURI(this.state.name)}?size=400x400`, imgError: false } };
+		this.state = { ...this.props.member, ...{ placeholderImg: `https://robohash.org/${encodeURI(this.props.member.name)}?size=400x400`, imgError: false } };
 	}
 
 	replaceImgOnError = () => {
@@ -52,7 +45,7 @@ class ProfileCard extends Component<member, member> {
 			<>
 				<Card className={styles.card + " h-100"}>
 					<div style={{ overflow: "hidden" }}>
-						<Card.Img variant="top" src="" onError={this.replaceImgOnError} />
+						<Card.Img className={styles["card-img-top"]} variant="top" src={member.img} onError={this.replaceImgOnError} />
 					</div>
 					<Card.Body className="pb-0">
 						<Card.Title>{member.name}</Card.Title>
@@ -60,11 +53,11 @@ class ProfileCard extends Component<member, member> {
 					</Card.Body>
 					<Card.Footer className={styles.socialLinkSet}>
 						<Row xs={4} noGutters>
-							{member.socialLinks === undefined ? null : <SocialLinkSetComponent socialLinks={member.socialLinks} />};
+							{member.socialLinks === undefined ? null : <SocialLinkSetComponent socialLinks={member.socialLinks} />}
 						</Row>
 					</Card.Footer>
 					<Card.Footer>
-						<Button variant="info" block>
+						<Button variant="info" className={styles["btn-info"]} block>
 							Know More
 						</Button>
 					</Card.Footer>

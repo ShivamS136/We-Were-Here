@@ -9,7 +9,7 @@ const ParticlesData = require("./particles.json");
 const JumboHeader = ({ teamName }: { teamName: string }) => {
 	return (
 		<>
-			<Jumbotron fluid className={`${styles.JumboHeader}` + " m-0 pb-0"}>
+			<Jumbotron fluid className={`${styles.JumboHeader} m-0 pb-0`}>
 				<Container>
 					<Row>
 						<Col xs={12} sm={{ span: 6, order: 2 }} className="pb-5 pb-sm-3 text-center">
