@@ -28,7 +28,7 @@ class ProfileCardlist extends Component<TypeMemberList, TypeMemberList> {
 		return (
 			<Container fluid className={styles.contentBox + " py-5"}>
 				<Container>
-					<Row xs={1} sm={2} md={3} noGutters>
+					<Row xs={1} sm={2} md={3} lg={4} noGutters>
 						<ProfileCardMapComponent memberList={this.state.memberList} />
 					</Row>
 				</Container>
