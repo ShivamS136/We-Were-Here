@@ -10,8 +10,8 @@ type TypeMemberList = {
 const ProfileCardMapComponent = ({ memberList }: { memberList: TypeMember[] }) => {
 	const ProfileCardMap = memberList.map((member: TypeMember, index) => {
 		return (
-			<Col className="p-3">
-				<ProfileCard member={member} key={index} />
+			<Col className="p-3" key={index}>
+				<ProfileCard member={member} />
 			</Col>
 		);
 	});
